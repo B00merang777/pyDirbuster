@@ -75,7 +75,8 @@ def main():
 
     for i, word in enumerate(wordlist):
         if not args.url:
-            args.url = input(B + "Enter URL:  \n")
+            args.url = input(
+                B + "Enter URL(Please Include HTTP or HTTPS Protocol): \n")
             print(G + " ")
         if args.url.endswith('/'):
             url = args.url + word
